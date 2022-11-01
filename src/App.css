@@ -1,4 +1,112 @@
-.App {
+.App{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+.navbarContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  height: 5vh;
+  width: 100vw;
+  border: 1px solid blue;
+}
+.navButton{
+  display: flex;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+.displayContainer{
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 95vh;
+  width: 100vw;
+  top: 5vh;
+  border: 1px solid red;
+  color: black;
+}
+h1{
+  display: flex;
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  border: 1px solid purple;
+  margin: 0;
+}
+.contentContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid orange;
+  height: calc(100% - 10vh);
+  width: 100%;
+
+}
+.characterCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  width: 35vh;
+}
+.characterCard:hover .characterName{
+  transform: translateY(calc(-35vh/2));
+  z-index: 4;
+}
+.characterCard:hover .characterQuote{
+  transform: translateY(calc(35vh/2));
+  z-index: 3;
+}
+.characterName{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  height: 35vh;
+  width: 35vh;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.5s;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+  border: 1px solid pink;
+}
+.characterQuote{
+  display: flex;
+  position: absolute;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
+  width: 35vh;
+  transition: all 0.5s;
+  background-color: white;
+  overflow: scroll;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +143,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
