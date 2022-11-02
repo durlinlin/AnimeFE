@@ -15,10 +15,12 @@ export default function Display() {
       }
     );
     console.log(response.data);
+    
     setAnime(response.data);
   };
 
   useEffect(() => {
+    setAnime([]);
     fetchData();
   }, [title]);
 
@@ -44,7 +46,11 @@ export default function Display() {
           <div key={key} className="characterCard">
             <div className="characterName">{data}</div>
             <div className="characterQuote">
-            {anime.map((quote, key) => quote.character.includes(data) && (<div key={key} className="quotes">{quote.quote}</div>))}
+              <div key={key} className="quotes">
+              {anime.map((quote, key) => quote.character.includes(data) && (
+                <div className="quoteText">{quote.quote}</div>
+              ))}
+                </div>
             </div>
           </div>
         ))}
