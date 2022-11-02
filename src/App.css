@@ -2,6 +2,7 @@
   display: flex;
   width: 100vw;
   height: 100vh;
+  font-family: 'Lora', serif;
 }
 .navbarContainer{
   display: flex;
@@ -26,7 +27,8 @@
   color: lightcoral;
   box-shadow: 0 0.4rem #dfd9d9;
   cursor: pointer;
-  transition: all .1s;
+  font-size: 19px;
+  /* transition: all 6s; */
  }
  
  .navButton:active {
@@ -66,7 +68,7 @@
   overflow: hidden;
   height: 92vh;
   width: 100vw;
-  top: 8vh;
+  top: 10vh;
   color: black;
 }
 h1{
@@ -74,10 +76,7 @@ h1{
   text-transform: capitalize;
   justify-content: center;
   align-items: center;
-  height: 15vh;
-  /* border: 1px solid purple; */
-
-  margin: 0;
+  height: 10vh;
 }
 .contentContainer{
   display: flex;
@@ -139,9 +138,9 @@ h1{
   border-radius: 3vh;
   border: 5px solid pink;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bolder;
-  text-shadow: 0px 0px 3px  rgb(209, 114, 130);
+  text-shadow: 2px 2px 5px  rgb(209, 114, 130);
 }
 .characterQuote{
   display: flex;
