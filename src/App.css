@@ -3,6 +3,7 @@
   width: 100vw;
   height: 100vh;
   font-family: 'Lora', serif;
+  background-color: rgb(240, 240, 253);
 }
 .navbarContainer{
   display: flex;
@@ -28,7 +29,7 @@
   box-shadow: 0 0.4rem #dfd9d9;
   cursor: pointer;
   font-size: 19px;
-  /* transition: all 6s; */
+  transition: all .2s;
  }
  
  .navButton:active {
@@ -77,6 +78,8 @@ h1{
   justify-content: center;
   align-items: center;
   height: 10vh;
+  color: white;
+  text-shadow: 1px 1px  1px lightcoral;
 }
 .contentContainer{
   display: flex;
@@ -104,6 +107,9 @@ h1{
   0%{
     transform: scale(0);
   }
+  50%{
+    transform: scale(1.1)
+  }
   100%{
     transform: scale(1);
   }
@@ -126,7 +132,7 @@ h1{
   height: 15vw;
   width: 15vw;
   z-index: 2;
-  background: rgb(250, 241, 241);  
+  background: rgb(253, 248, 248);  
   transition: transform 0.5s;
   box-shadow:
   2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
@@ -140,7 +146,7 @@ h1{
   color: white;
   font-size: 25px;
   font-weight: bolder;
-  text-shadow: 2px 2px 5px  rgb(209, 114, 130);
+  text-shadow: 2px 2px 3px  lightcoral;
 }
 .characterQuote{
   display: flex;
